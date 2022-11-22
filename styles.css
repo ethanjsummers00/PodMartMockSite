@@ -11,3 +11,25 @@ font-family: 'Roboto', sans-serif; */
     --yellow: #fcc473;
     --gray: #747474;
 }
+
+html{
+    
+}
+
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header{
+    background-color: var(--gray);
+}
+
+#deals{
+    background-color: var(--gray);
+}
+
+footer{
+    background-color: var(--gray);
+}
