@@ -38,7 +38,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+        padding-left: 25px;
 }
+
+
 
 #navRight{
     flex: 30%;
@@ -87,7 +90,7 @@ main {
 
 #deals{
     background-color: var(--gray);
-    padding: 0 1% 0 1%;
+    padding: 0 1% 10px 1%;
     margin: 0 auto;
 }
 
@@ -97,10 +100,10 @@ footer{
 
 #about{
     display: flex;
-    padding: 2% 10px 0 10px;
+    padding: 2% 2% 0 2%;
 }
 
-#about h1 {
+#about h1, form h1 {
     font-size: 40px;
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--green);
@@ -131,14 +134,131 @@ footer{
     text-align: center;
 }
 
-form{   
+#deals h2 {
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--yellow);
+    margin: 0;
+}
 
+#deals p {
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--yellow);
+    margin: 0;
+}
+
+input[type=radio] {
+    display: inline;
+  }
+
+form{   
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+div label{
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--green);
+    margin: 0;
+}
+
+fieldset{
+    border-style: none;
+}
+
+.inputGroup{
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea{
+    height: 35px;
+    background-color: #afafaf;
+    border-radius: 10px;
+    border-style: solid;
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=radio]{
+    transform:scale(1.5); 
+    cursor: pointer;
+}
+
+input[type=submit]{
+    width: 75%;
+    border-style: none;
+    background-color: var(--green);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+em{
+    font-style: normal;
+    color: #990000;
+}
+
+fieldset{
+    margin: 10px 0 10px 0;
 }
 
 #deals p{
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    max-width: 300px;
+}
+
+#deals span{
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--yellow);
 }
 
 #menu{
     display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 30px 0 30px 0;
+}
+
+#items{
+    display: flex;
+}
+
+#items aside{
+    flex: 50%;   
+}
+
+#items aside img{
+    float: right;
+}
+
+#items article{
+    flex: 50%;
+    align-self: center;
 }

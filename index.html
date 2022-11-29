@@ -7,7 +7,7 @@
         <meta name="description" content="P.O.D. Market Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
     </head>
     <body>
         <header>
@@ -66,37 +66,61 @@
             </section>
             <section id="deals">
                 <h1>Hot New Items in Stock</h1>
-                <div>
-                    <img src="">
+                <div id="items">
+                    <aside><img src="images/flaminRuffles.png" width="200px" alt="A bag of flamin hot Ruffles"></aside>
+                    <article>
+                        <h2>Flamin’ Hot Ruffles</h2>
+                        <p>
+                            A crunchy, and spicy snack to
+                            rock your taste buds!
+                        </p>
+                        <span>$4.50 - Add to Cart</span>
+                    </article>
                 </div>
                 <div id="menu">
-                    <p><</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <line x1="5" y1="12" x2="11" y2="18" />
+                        <line x1="5" y1="12" x2="11" y2="6" />
+                    </svg>
                     <p>1</p>
-                    <p>></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <line x1="13" y1="18" x2="19" y2="12" />
+                        <line x1="13" y1="6" x2="19" y2="12" />
+                    </svg>
                 </div>
             </section>
             <section id="contact">
                 <h1></h1>
                 <form>
-                    <label for="fullName">Full Name*</label>
-                    <input type="text" id="fullName" name="fullName">
-
-                    <label for="phone">Phone*</label>
-                    <input type="tel" id="phone" name="phone">
-
-                    <label for="email">Email*</label> 
-                    <input type="email" id="email" name="email">
-
+                    <h1>Let Us Hear From You</h1>
+                    <div class="inputGroup">
+                        <label for="fullName">Full Name<em>*</em></label>
+                        <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="First and Last Name">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="phone">Phone<em>*</em></label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="555-555-5555">    
+                    </div>
+                    <div class="inputGroup">
+                        <label for="email">Email<em>*</em></label> 
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="address@emailprovider.com">
+                    </div>
                     <fieldset>
-                        <h2>Preferred Contact Method*</h2>
+                        <h3>Preferred Contact Method<em>*</em></h3>
                         <input type="radio" name="contact">
                         <label>Phone</label>
                         <input type="radio" name="contact">
                         <label>Email</label>
                     </fieldset>
-
-                    <label for="message">Message*</label> 
-                    <textarea id="message"></textarea>
+                    <div>
+                        <label for="message">Message<em>*</em></label> 
+                        <textarea id="message"></textarea>
+                    </div>
+                    <input type="submit">
                 </form>
             </section>
         </main>
