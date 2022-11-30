@@ -22,11 +22,14 @@
                 </section>
                 <section id="navRight">
                     <span>ASU Sign In</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="4" />
-                        <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-                    </svg>
+                    <label>
+                        <input type="checkbox" name="" value="" id="sunCheck" checked/>
+                        <svg id="sunBtn" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="4" />
+                            <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                        </svg>
+                    </label>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="6" cy="19" r="2" />
@@ -65,67 +68,83 @@
                 </article>
             </section>
             <section id="deals">
-                <h1>Hot New Items in Stock</h1>
-                <div id="items">
-                    <aside><img src="images/flaminRuffles.png" width="200px" alt="A bag of flamin hot Ruffles"></aside>
-                    <article>
-                        <h2>Flamin’ Hot Ruffles</h2>
-                        <p>
-                            A crunchy, and spicy snack to
-                            rock your taste buds!
-                        </p>
-                        <span>$4.50 - Add to Cart</span>
-                    </article>
-                </div>
-                <div id="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <line x1="5" y1="12" x2="11" y2="18" />
-                        <line x1="5" y1="12" x2="11" y2="6" />
-                    </svg>
-                    <p>1</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <line x1="13" y1="18" x2="19" y2="12" />
-                        <line x1="13" y1="6" x2="19" y2="12" />
-                    </svg>
-                </div>
+                <section id="inStock">
+                    <h1>Hot New Items in Stock</h1>
+                    <div id="items">
+                        <aside><img src="images/flaminRuffles.png" width="200px" alt="A bag of flamin hot Ruffles"></aside>
+                        <article>
+                            <h2>Flamin’ Hot Ruffles</h2>
+                            <p>
+                                A crunchy, and spicy snack to
+                                rock your taste buds!
+                            </p>
+                            <span>$4.50 - Add to Cart</span>
+                        </article>
+                    </div>
+                    <div id="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <line x1="5" y1="12" x2="11" y2="18" />
+                            <line x1="5" y1="12" x2="11" y2="6" />
+                        </svg>
+                        <p>1</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <line x1="13" y1="18" x2="19" y2="12" />
+                            <line x1="13" y1="6" x2="19" y2="12" />
+                        </svg>
+                    </div>
+                </section>
+                <section id="checkOut">
+                    <h1>Your Cart</h1>
+                </section>
             </section>
             <section id="contact">
-                <h1></h1>
                 <form>
                     <h1>Let Us Hear From You</h1>
                     <div class="inputGroup">
                         <label for="fullName">Full Name<em>*</em></label>
+                        <span class="error">Please enter your full name.</span>
                         <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="First and Last Name">
                     </div>
                     <div class="inputGroup">
                         <label for="phone">Phone<em>*</em></label>
+                        <span class="error">Please enter a phone number.</span>
                         <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="555-555-5555">    
                     </div>
                     <div class="inputGroup">
-                        <label for="email">Email<em>*</em></label> 
+                        <label for="email">Email<em>*</em></label>
+                        <span class="error">Please enter a valid email address.</span> 
                         <input type="email" id="email" name="email" autocomplete="email" placeholder="address@emailprovider.com">
                     </div>
                     <fieldset>
                         <h3>Preferred Contact Method<em>*</em></h3>
-                        <input type="radio" name="contact">
+                        <span class="error">Please choose a method of contact.</span>
+                        <input type="radio" name="contact" id="contact">
                         <label>Phone</label>
-                        <input type="radio" name="contact">
+                        <input type="radio" name="contact" id="contact">
                         <label>Email</label>
                     </fieldset>
                     <div>
-                        <label for="message">Message<em>*</em></label> 
+                        <label for="message">Message<em>*</em></label>
+                        <span class="error">Please enter a message.</span> 
                         <textarea id="message"></textarea>
                     </div>
-                    <input type="submit">
+                    <input type="submit" id="submit" value="Send">
                 </form>
             </section>
         </main>
         <footer>
-
+            <div id="footLeft">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Food & Drink</a></li>
+                    <li><a href="#">Supplies</a></li>
+                </ul>
+            </div>
+            <div id="footRight">P.O.D. Market - &copy;2022</div>
         </footer>
     </body>
 </html>

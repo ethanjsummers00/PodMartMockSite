@@ -10,16 +10,18 @@ font-family: 'Roboto', sans-serif; */
     --green: #4e923f;
     --yellow: #fcc473;
     --gray: #747474;
+    --white: #ffffff;
+    --background: #afafaf;
 }
 
 html{
-    background-color: #afafaf;
+    background-color: var(--background);
 }
 
 body{
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 header{
@@ -53,12 +55,21 @@ nav{
 
 #navRight span{
     padding: 0 10px 0 10px;
+    margin-right: 6px;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     border: 3px solid #ffffff;
     border-radius: 25px;
     align-self: center;
+}
+
+#sunBtn{
+    cursor: pointer;
+}
+
+#sunCheck{
+    display: none;
 }
 
 ul{
@@ -72,7 +83,7 @@ li{
     padding-right: 20px;
 }
 
-li a{
+nav li a{
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 900;
@@ -92,10 +103,33 @@ main {
     background-color: var(--gray);
     padding: 0 1% 10px 1%;
     margin: 0 auto;
+    display: flex;
+}
+
+#inStock{
+    flex: 50%;
+}
+
+#checkOut h1{
+    margin: 20px 0 0 0;
+    font-size: 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--green);
+    text-align: center;
+}
+
+#checkOut{
+    flex: 50%;
+    background-color: var(--white);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 footer{
     background-color: var(--gray);
+    display: flex;
+    padding: 20px 0 20px 0;
 }
 
 #about{
@@ -127,7 +161,7 @@ footer{
     font-style: italic;
 }
 
-#deals h1 {
+#inStock h1 {
     font-size: 40px;
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--yellow);
@@ -191,6 +225,16 @@ input[type=text], input[type=tel], input[type=email], textarea{
     margin: auto;
 }
 
+.error  {
+    display: none;
+}
+
+.errorOutput{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #990000;
+}
+
 textarea{
     height: 100px;
 }
@@ -201,8 +245,12 @@ input[type=radio]{
 }
 
 input[type=submit]{
-    width: 75%;
+    width: 33%;
+    height: 30px;
     border-style: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
     background-color: var(--green);
     color: #ffffff;
     cursor: pointer;
@@ -221,6 +269,10 @@ em{
 
 fieldset{
     margin: 10px 0 10px 0;
+}
+
+#contact{
+    padding-bottom: 10px;
 }
 
 #deals p{
@@ -261,4 +313,24 @@ fieldset{
 #items article{
     flex: 50%;
     align-self: center;
+}
+
+#footLeft{
+    flex: 50%;
+    font-size: 20px;
+}
+
+#footLeft li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;;
+}
+
+#footRight{
+    flex: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: end;
+    padding-right: 20px;
 }
