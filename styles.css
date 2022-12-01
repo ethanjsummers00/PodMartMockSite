@@ -134,7 +134,7 @@ footer{
 
 #about{
     display: flex;
-    padding: 2% 2% 0 2%;
+    padding: 2% 2% 2% 2%;
 }
 
 #about h1, form h1 {
@@ -326,6 +326,10 @@ fieldset{
     font-family: 'Merriweather Sans', sans-serif;;
 }
 
+#footLeft li a:hover{
+    color: var(--yellow);
+}
+
 #footRight{
     flex: 50%;
     font-size: 20px;
@@ -333,4 +337,40 @@ fieldset{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: end;
     padding-right: 20px;
+}
+
+#itemOne{
+    width: 100%;
+}
+
+#itemOneD{
+    width: 100%;
+}
+
+#itemTwo{
+    display: none;
+    width: 100%;
+}
+
+#itemTwoD{
+    display: none;
+    width: 100%;
+}
+
+#itemThree{
+    display: none;
+    width: 100%;
+}
+
+#itemThreeD{
+    display: none;
+    width: 100%;
+}
+
+#arrowRight{
+    cursor: pointer;
+}
+
+#arrowLeft{
+    cursor: pointer;
 }
