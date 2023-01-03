@@ -140,8 +140,13 @@ footer h2{
 }
 
 address{
+	color: #ffffff;
 	margin-bottom: 10px;
 	padding-left: 2%;
+}
+
+small {
+	color: #ffffff;
 }
 
 form{
@@ -601,7 +606,7 @@ input[type="submit"]{
 	ul li{
 		display: inline;
 		font-size: 1.25em;
-		margin: 0 15px 0 15px;
+		margin: 0 2% 0 2%;
 	}
 
 	li a:hover{
@@ -738,5 +743,6 @@ input[type="submit"]{
 
 	footer{
 		padding-bottom: 8px;
+		margin-top: 1%;
 	}
 }
