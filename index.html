@@ -1,168 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>P.O.D. Market</title>
-        <meta name="description" content="P.O.D. Market Website">
+        <title>All Food Mart</title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="images/podMarketTrans.png" width="200px" alt="the POD Market Logo">
             <nav>
-                <section id="navLeft">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">FOOD & DRINK</a></li>
-                        <li><a href="#">SUPPLIES</a></li>
-                    </ul>
-                </section>
-                <section id="navRight">
-                    <span>ASU Sign In</span>
-                    <label>
-                        <input type="checkbox" name="" value="" id="sunCheck" checked/>
-                        <svg id="sunBtn" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="12" r="4" />
-                            <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-                        </svg>
-                    </label>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="6" cy="19" r="2" />
-                        <circle cx="17" cy="19" r="2" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                    </svg>
-                </section>
+                <img src="images/podMarketTrans.png">
+                <ul id="navList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#advert">Weekly Ad</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#coupons">Coupons</a></li>
+                    <li><a href="#">Coupon Club</a></li>
+                </ul>
+                <svg id="cart" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#E2AC13" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="19" r="2" />
+                    <circle cx="17" cy="19" r="2" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+                <svg id="user" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#E2AC13" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                </svg>
+                <svg id="navMenu" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#E2AC13" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
             </nav>
         </header>
         <main>
-            <section id="about">
-                <aside>
-                    <img src="images/podMart.jpg" width="400px" alt="A grid of four images showing the interior and exterior of a POD Market">
-                </aside>
-                <article>
-                    <h1>About P.O.D. Market</h1>
-                    <p>The P.O.D. Market is a full service convenience store that carries all
-                        of your needs while on campus. Snacks, hot and frozen foods,
-                        beverages, classroom supplies…you name it! Meal exchange is
-                        accepted in all locations (excluding the Micro POD Market at Hayden
-                        Library).
-                        
-                        Meal Exchange offers the ultimate in convenience with meal options
-                        that can be easily exchanged for a swipe twice a day at all on campus
-                        markets. The P.O.D. Markets are located inside the Memorial Union
-                        - Main Level, Tooker House, Greek Village, Hayden Library and our
-                        newest location near Vista Del Sol called the P.O.D. Market Warehouse.
-                        </p>
-                        <p>Meal Exchange offers the ultimate in convenience with meal options
-                            that can be easily exchanged for a swipe twice a day at all on campus
-                            markets. The P.O.D. Markets are located inside the Memorial Union
-                            – Main Level, Tooker House, Greek Village, Hayden Library and our
-                            newest location near Vista Del Sol called the P.O.D. Market Warehouse.</p>
-                        <span>We hope to see you soon!</span>
-                </article>
+            <section id="advert">
+                <h2>Weekly Advertisement</h2>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <span class="linkBtn">View Weekly Ad</span>
             </section>
-            <section id="deals">
-                <section id="inStock">
-                    <h1>Hot New Items in Stock</h1>
-                    <div id="items">
-                            <aside id="itemOne"><img src="images/flaminRuffles.png" width="200px" height="300px" alt="A bag of flamin hot Ruffles"></aside>
-                            <article id="itemOneD">
-                                <h2>Flamin’ Hot Ruffles</h2>
-                                <p>
-                                    A crunchy, and spicy snack to
-                                    rock your taste buds!
-                                </p>
-                                <span>$4.50 - Add to Cart</span>
-                            </article>
-                            <aside id="itemTwo"><img src="images/coke.png"  width="200px" height="300px" alt="A bag of flamin hot Ruffles"></aside>
-                            <article id="itemTwoD">
-                                <h2>Coca Cola Classic</h2>
-                                <p>
-                                    Classic flavor to quench your
-                                    thirst!
-                                </p>
-                                <span>$1.75 - Add to Cart</span>
-                            </article>
-                            <aside id="itemThree"><img src="images/ramen.png"  width="200px" height="300px" alt="A bag of flamin hot Ruffles"></aside>
-                            <article id="itemThreeD">
-                                <h2>Shin Ramen</h2>
-                                <p>
-                                    A spicy and microwaveable
-                                    meal to go!
-                                </p>
-                                <span>$2.00 - Add to Cart</span>
-                            </article>
+            <section id="shop">
+                <h2>Shop Departments</h2>
+                <figure id="one">
+                    <img src="images/bakery.jpg" width="100" alt="A picture of a muffin pan with muffins being held
+                    by a gloved hand">
+                    <figcaption>Bakery</figcaption>
+                </figure>
+                <figure id="two">
+                    <img src="images/meat.jpg" width="100" alt="A wooden platter with two uncooked steaks">
+                    <figcaption>Deli</figcaption>
+                </figure>
+                <figure id="three">
+                    <img src="images/produce.jpg" width="100" alt="A wooden table with partially cut apples and a knife">
+                    <figcaption>Produce</figcaption>
+                </figure>
+                <figure id="four">
+                    <img src="images/dairy.jpg" width="100" alt="A glass and a jug of milk nex to a bowl of brown eggs">
+                    <figcaption>Dairy</figcaption>
+                </figure>
+                <figure id="five">
+                    <img src="images/beverages.jpg" width="100" alt="A platter of sliced lemon next to teabags and a cup of tea
+                    with lemon">
+                    <figcaption>Beverages</figcaption>
+                </figure>
+                <figure id="six">
+                    <img src="images/seafood.jpg" width="100" alt="A plate with mashed potatoes, salmon, and a small bowl of sauce">
+                    <figcaption>Seafood</figcaption>
+                </figure>
+                <span class="linkBtn">View All</span>
+            </section>
+            <section id="coupons">
+                <h2>Coupons</h2>
+
+                    <section id="couponOne">
+                        <figure>
+                            <img src="images/mustard.png" width="200" alt="A yellow bottle of American Gourmet mustard">
+                            <figcaption>SAVE $</figcaption>
+                        </figure>
+                        <div class="prodExp">
+                            <p class="prod">Gourmet Mustard</p>
+                            <p class="exp">Exp: 11/01</p>
+                        </div>
+                        <br>
+                        <p class="desc">Lorem ipsum dolor sit Lorem ipsum
+                            dolor sit Lorem ipsum dolor sit</p>
+                        <div class="snip">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="6" cy="7" r="3" />
+                                <circle cx="6" cy="17" r="3" />
+                                <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                                <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                            </svg>
+                            <p>Snip</p>
+                        </div>
+                    </section>
+
+                    <section id="couponTwo">
+                        <figure>
+                            <img src="images/mustard.png" width="200" alt="A yellow bottle of American Gourmet mustard">
+                            <figcaption>SAVE $</figcaption>
+                        </figure>
+                        <div class="prodExp">
+                            <p class="prod">Gourmet Mustard</p>
+                            <p class="exp">Exp: 11/01</p>
+                        </div>
+                        <br>
+                        <p class="desc">Lorem ipsum dolor sit Lorem ipsum
+                            dolor sit Lorem ipsum dolor sit</p>
+                        <div class="snip">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <circle cx="6" cy="7" r="3" />
+                                <circle cx="6" cy="17" r="3" />
+                                <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                                <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                            </svg>
+                            <p>Snip</p>
+                        </div>
+                    </section>
+
+                <section id="couponThree">
+                    <figure>
+                        <img src="images/mustard.png" width="200" alt="A yellow bottle of American Gourmet mustard">
+                        <figcaption>SAVE $</figcaption>
+                    </figure>
+                    <div class="prodExp">
+                        <p class="prod">Gourmet Mustard</p>
+                        <p class="exp">Exp: 11/01</p>
                     </div>
-                    <div id="menu">
-                        <svg id="arrowLeft" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <br>
+                        <p class="desc">Lorem ipsum dolor sit Lorem ipsum
+                            dolor sit Lorem ipsum dolor sit</p>
+                    <div class="snip">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <line x1="5" y1="12" x2="11" y2="18" />
-                            <line x1="5" y1="12" x2="11" y2="6" />
+                            <circle cx="6" cy="7" r="3" />
+                            <circle cx="6" cy="17" r="3" />
+                            <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                            <line x1="8.6" y1="15.4" x2="19" y2="5" />
                         </svg>
-                        <p id="itemPage" style="font-size: 40px">1</p>
-                        <svg id="arrowRight" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <line x1="13" y1="18" x2="19" y2="12" />
-                            <line x1="13" y1="6" x2="19" y2="12" />
-                        </svg>
+                        <p>Snip</p>
                     </div>
                 </section>
-                <section id="checkOut">
-                    <h1>Your Cart</h1>
+
+                <section id="couponFour">
+                    <figure>
+                        <img src="images/mustard.png" width="200" alt="A yellow bottle of American Gourmet mustard">
+                        <figcaption>SAVE $</figcaption>
+                    </figure>
+                    <div class="prodExp">
+                        <p class="prod">Gourmet Mustard</p>
+                        <p class="exp">Exp: 11/01</p>
+                    </div>
+                            <br>
+                            <p class="desc">Lorem ipsum dolor sit Lorem ipsum
+                                dolor sit Lorem ipsum dolor sit</p>
+                        <div class="snip">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="7" r="3" />
+                            <circle cx="6" cy="17" r="3" />
+                            <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                            <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                        </svg>
+                        <p>Snip</p>
+                        </div>
                 </section>
+                    
+
+            
+                <span class="linkBtn">View All</span>
             </section>
-            <section id="contact">
-                <form>
-                    <h1>Let Us Hear From You</h1>
-                    <div class="inputGroup">
-                        <label for="fullName">Full Name<em>*</em></label>
-                        <span class="error">Please enter your full name.</span>
-                        <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="First and Last Name">
-                    </div>
-                    <div class="inputGroup">
-                        <label for="phone">Phone<em>*</em></label>
-                        <span class="error">Please enter a phone number.</span>
-                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="555-555-5555">    
-                    </div>
-                    <div class="inputGroup">
-                        <label for="email">Email<em>*</em></label>
-                        <span class="error">Please enter a valid email address.</span> 
-                        <input type="email" id="email" name="email" autocomplete="email" placeholder="address@emailprovider.com">
-                    </div>
-                    <fieldset>
-                        <h3>Preferred Contact Method<em>*</em></h3>
-                        <span class="error">Please choose a method of contact.</span>
-                        <input type="radio" name="contact" id="contact">
-                        <label>Phone</label>
-                        <input type="radio" name="contact" id="contact">
-                        <label>Email</label>
-                    </fieldset>
-                    <div>
-                        <label for="message">Message<em>*</em></label>
-                        <span class="error">Please enter a message.</span> 
-                        <textarea id="message"></textarea>
-                    </div>
-                    <input type="submit" id="submit" value="Send">
-                </form>
-            </section>
+            <!-- <form>
+                <h2>Coupon Club</h2>
+                <label for="firstName">First Name<span class="req">*</span></label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="First Name">
+
+                <label for="lastName">Last Name<span class="req">*</span></label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Last Name">
+
+                <label for="email">Email<span class="req">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="email@serviceprovider.com">
+                <br>
+                <input type="submit" value="Sign Up">
+            </form> -->
         </main>
         <footer>
-            <div id="footLeft">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Food & Drink</a></li>
-                    <li><a href="#">Supplies</a></li>
-                </ul>
+            <div id="siteMap">
+                <h2>All Food Mart</h2>
+                <address>123 Mockup Street<br>
+                San Francisco, CA 10000<br>
+                (555) 555-5555</address>
+                <small>All Food Mart &copy; 2022</small>
+                <small>All rights reserved.</small>
             </div>
-            <div id="footRight">P.O.D. Market - &copy;2022</div>
+
+
+            <section id="socials">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                </svg>
+            </section>
         </footer>
     </body>
 </html>

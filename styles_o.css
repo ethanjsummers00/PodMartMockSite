@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=Roboto:ital@0;1&display=swap');
+/* font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*global rules*/
+/*remember Ethan: padding is TRBL*/
+
+:root{
+    --green: #4e923f;
+    --yellow: #fcc473;
+    --gray: #747474;
+    --white: #ffffff;
+    --background: #afafaf;
+}
+
+html{
+    background-color: var(--background);
+}
+
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+header{
+    background-color: var(--gray);
+    display: flex;
+}
+
+nav{
+    display: flex;
+    flex: 66%;
+    align-items: center; 
+}
+
+#navLeft{
+    flex: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        padding-left: 25px;
+}
+
+
+
+#navRight{
+    flex: 30%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+#navRight span{
+    padding: 0 10px 0 10px;
+    margin-right: 6px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    align-self: center;
+}
+
+#sunBtn{
+    cursor: pointer;
+}
+
+#sunCheck{
+    display: none;
+}
+
+ul{
+    margin: 0 auto;
+    padding: 0%;
+}
+
+li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--yellow);
+}
+
+main {
+    
+}
+
+#deals{
+    background-color: var(--gray);
+    padding: 0 1% 10px 1%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#inStock{
+    flex: 50%;
+}
+
+#checkOut h1{
+    margin: 20px 0 0 0;
+    font-size: 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--green);
+    text-align: center;
+}
+
+#checkOut{
+    flex: 50%;
+    background-color: var(--white);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: var(--gray);
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+#about{
+    display: flex;
+    padding: 2% 2% 2% 2%;
+}
+
+#about h1, form h1 {
+    font-size: 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--green);
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+#about img {
+    border: 5px solid var(--green);
+}
+
+#about article{
+    margin-left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#about article span{
+    color: var(--green);
+    font-weight: bold;
+    font-style: italic;
+}
+
+#inStock h1 {
+    font-size: 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--yellow);
+    text-align: center;
+}
+
+#deals h2 {
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--yellow);
+    margin: 0;
+}
+
+#deals p {
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--yellow);
+    margin: 0;
+}
+
+input[type=radio] {
+    display: inline;
+  }
+
+form{   
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+div label{
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--green);
+    margin: 0;
+}
+
+fieldset{
+    border-style: none;
+}
+
+.inputGroup{
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea{
+    height: 35px;
+    background-color: #afafaf;
+    border-radius: 10px;
+    border-style: solid;
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+}
+
+.error  {
+    display: none;
+}
+
+.errorOutput{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #990000;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=radio]{
+    transform:scale(1.5); 
+    cursor: pointer;
+}
+
+input[type=submit]{
+    width: 33%;
+    height: 30px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: var(--green);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+em{
+    font-style: normal;
+    color: #990000;
+}
+
+fieldset{
+    margin: 10px 0 10px 0;
+}
+
+#contact{
+    padding-bottom: 10px;
+}
+
+#deals p{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    max-width: 300px;
+}
+
+#deals span{
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--yellow);
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 30px 0 30px 0;
+}
+
+#items{
+    display: flex;
+}
+
+#items aside{
+    flex: 50%;   
+}
+
+#items aside img{
+    float: right;
+}
+
+#items article{
+    flex: 50%;
+    align-self: center;
+}
+
+#footLeft{
+    flex: 50%;
+    font-size: 20px;
+}
+
+#footLeft li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;;
+}
+
+#footLeft li a:hover{
+    color: var(--yellow);
+}
+
+#footRight{
+    flex: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: end;
+    padding-right: 20px;
+}
+
+#itemOne{
+    width: 100%;
+}
+
+#itemOneD{
+    width: 100%;
+}
+
+#itemTwo{
+    display: none;
+    width: 100%;
+}
+
+#itemTwoD{
+    display: none;
+    width: 100%;
+}
+
+#itemThree{
+    display: none;
+    width: 100%;
+}
+
+#itemThreeD{
+    display: none;
+    width: 100%;
+}
+
+#arrowRight{
+    cursor: pointer;
+}
+
+#arrowLeft{
+    cursor: pointer;
+}
