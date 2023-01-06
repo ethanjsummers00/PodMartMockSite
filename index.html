@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
     </head>
     <body>
         <header>
@@ -19,7 +20,7 @@
                     <li><a href="#coupons">Coupons</a></li>
                     <li><a href="#">Coupon Club</a></li>
                 </ul>
-                <svg id="cart" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#E2AC13" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg onclick="openCart()" id="cart" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#E2AC13" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <circle cx="6" cy="19" r="2" />
                     <circle cx="17" cy="19" r="2" />
@@ -38,12 +39,19 @@
                     <line x1="4" y1="18" x2="20" y2="18" />
                 </svg>
             </nav>
+            <div id="cartNav">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg> -->
+            </div>
         </header>
         <main>
             <section id="advert">
-                <h2>Weekly Deals</h2>
+                <h2>New Weekly Deals</h2>
                 <p>Every week we have brand new deals and limited supply items. <br>
-                    Check out what we have featured today!
+                From flavorful new snacks to handy supplies, check out what we have featured today!
                 </p>
                 <span class="linkBtn">View Weekly Deals</span>
             </section>
@@ -52,19 +60,19 @@
                 <figure id="one">
                     <img src="images/bakery.jpg" width="100" alt="A picture of a muffin pan with muffins being held
                     by a gloved hand">
-                    <figcaption>Bakery</figcaption>
+                    <figcaption>Ready to-go Meals</figcaption>
                 </figure>
                 <figure id="two">
                     <img src="images/meat.jpg" width="100" alt="A wooden platter with two uncooked steaks">
-                    <figcaption>Deli</figcaption>
+                    <figcaption>Snacks</figcaption>
                 </figure>
                 <figure id="three">
                     <img src="images/produce.jpg" width="100" alt="A wooden table with partially cut apples and a knife">
-                    <figcaption>Produce</figcaption>
+                    <figcaption>Home Supplies</figcaption>
                 </figure>
                 <figure id="four">
                     <img src="images/dairy.jpg" width="100" alt="A glass and a jug of milk nex to a bowl of brown eggs">
-                    <figcaption>Dairy</figcaption>
+                    <figcaption>Candy and Desserts</figcaption>
                 </figure>
                 <figure id="five">
                     <img src="images/beverages.jpg" width="100" alt="A platter of sliced lemon next to teabags and a cup of tea
@@ -73,7 +81,7 @@
                 </figure>
                 <figure id="six">
                     <img src="images/seafood.jpg" width="100" alt="A plate with mashed potatoes, salmon, and a small bowl of sauce">
-                    <figcaption>Seafood</figcaption>
+                    <figcaption>School Supplies</figcaption>
                 </figure>
                 <span class="linkBtn">View All</span>
             </section>
@@ -196,11 +204,11 @@
         </main>
         <footer>
             <div id="siteMap">
-                <h2>All Food Mart</h2>
+                <h2>POD Market</h2>
                 <address>123 Mockup Street<br>
-                San Francisco, CA 10000<br>
+                Tempe, AZ 10000<br>
                 (555) 555-5555</address>
-                <small>All Food Mart &copy; 2022</small>
+                <small>P.O.D. Marketplace &copy; 2022</small>
                 <small>All rights reserved.</small>
             </div>
 

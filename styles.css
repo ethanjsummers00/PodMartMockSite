@@ -73,6 +73,7 @@ nav{
 }
 
 #shop h2{
+	padding-top: 2%;
 	grid-area: a;
 	text-align: center;
 	padding-bottom: 2%;
@@ -135,6 +136,7 @@ footer{
 }
 
 footer h2{
+	color: var(--yellow);
 	margin-bottom: 10px;
 	padding-left: 2%;
 }
@@ -289,6 +291,7 @@ input[type="submit"]{
 	}
 
 	#shop{
+		
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		/* grid-template-rows: 100px 100px; */
@@ -435,7 +438,7 @@ input[type="submit"]{
 		margin: 0 2% 0 2%;
 		align-self: flex-end;
 		flex: 100%;
-		max-width: 100px;
+		max-width: 500px;
 	}
 
 	#advert p{
@@ -616,6 +619,18 @@ input[type="submit"]{
 	li a{
 		color: var(--green);
 		text-decoration: none;
+	}
+
+	#cartNav{
+		background-color: #ffffff;
+		z-index: 1;
+		transition: 0.3s;
+		width: 0;
+	}
+
+	main, header{
+		transition: margin-right .5s;
+		z-index: 0;
 	}
 
 	#advert{
