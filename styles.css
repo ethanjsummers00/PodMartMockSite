@@ -459,14 +459,14 @@ input[type="submit"]{
 	}
 
 	#shop img{
-		width: 200px;
-		height: 150px;
+		width: 300px;
+		/* height: 150px; */
 		border-radius: 10px;
 	}
 
 	#shop figcaption{
 		padding-bottom: 10px;
-		font-size: 20px;
+		font-size: 30px;
 	}
 
 	#shop .linkBtn{
@@ -626,6 +626,15 @@ input[type="submit"]{
 		z-index: 1;
 		transition: 0.3s;
 		width: 0;
+	}
+
+	#close {
+		position: absolute;
+		top: 1%;
+		right: 2%;
+		font-size: 2em;
+		cursor: pointer;
+		display: none;
 	}
 
 	main, header{
