@@ -233,6 +233,14 @@ input[type="submit"]{
 	max-width: 500px;
 }
 
+h2{
+	color: var(--red);
+}
+
+#deals h2{
+	color: var(--yellow);
+}
+
 @media only screen and (max-width: 600px){
 	nav h1, nav img{
 		flex: 80%;
@@ -254,7 +262,6 @@ input[type="submit"]{
 	h2{
 		font-weight: 800;
 		font-size: 1.5em;
-		color: var(--red);
 	}
 
 	p{
@@ -425,7 +432,6 @@ input[type="submit"]{
 	h2{
 		font-weight: 800;
 		font-size: 1.75em;
-		color: var(--red);
 	}
 
 	p{
@@ -593,7 +599,6 @@ input[type="submit"]{
 	h2{
 		font-weight: 800;
 		font-size: 2.5em;
-		color: var(--red);
 	}
 
 	#navList{
@@ -648,10 +653,31 @@ input[type="submit"]{
 		padding: 0 1% 10px 1%;
 		margin: 0 auto;
 		display: flex;
+		flex-direction: column;
+	}
+
+	#inStock{
+		flex: 100%;
 	}
 
 	#itemSlides{
 		display: flex;
+		width: 600px;
+		height: 325px;
+		background-color: var(--gray);
+		border-radius: 25px;
+		align-items: center;
+		align-self: center;
+	}
+
+	#itemSlides p{
+		color: #ffffff;
+		padding: 3% 0 3% 0;
+		max-width: 200px;
+	}
+	#itemSlides span{
+		color: var(--yellow);
+		cursor: pointer;
 	}
 	
 	#itemSlides aside{
@@ -701,6 +727,7 @@ input[type="submit"]{
 
 	#menu{
 		display: flex;
+		flex: 100%;
 		justify-content: center;
 		font-size: 30px;
 		margin: 30px 0 30px 0;

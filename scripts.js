@@ -14,39 +14,60 @@ function closeCart() {
     document.getElementById("cartContent").style.display = "none";
 }
 
-// function itemSlide(){
+let itemNum = 1;
+console.log(itemNum);
 
-//     if(itemNum == 1){
-//         document.getElementById('itemPage').innerText = "1";
+document.getElementById('arrowRight').addEventListener('click', function() {
+    if(itemNum < 3){
+        itemNum++;
+    }
 
-//         document.querySelector('#itemOne').style.display = "block";
-//         document.querySelector('#itemTwo').style.display = "none";
-//         document.querySelector('#itemThree').style.display = "none";
+    console.log(itemNum);   
+    itemSlide();
+});
 
-//         document.querySelector('#itemOneD').style.display = "block";
-//         document.querySelector('#itemTwoD').style.display = "none";
-//         document.querySelector('#itemThreeD').style.display = "none";
-//     }
-//     if(itemNum == 2){
-//         document.getElementById('itemPage').innerText = "2";
+document.getElementById('arrowLeft').addEventListener('click', function() {
+    if(itemNum > 1){
+        itemNum--;
+    }
 
-//         document.querySelector('#itemOne').style.display = "none";
-//         document.querySelector('#itemTwo').style.display = "block";
-//         document.querySelector('#itemThree').style.display = "none";
+    console.log(itemNum);   
+    itemSlide();
+});
 
-//         document.querySelector('#itemOneD').style.display = "none";
-//         document.querySelector('#itemTwoD').style.display = "block";
-//         document.querySelector('#itemThreeD').style.display = "none";
-//     }
-//     if(itemNum == 3){
-//         document.getElementById('itemPage').innerText = "3";
+function itemSlide(){
 
-//         document.querySelector('#itemOne').style.display = "none";
-//         document.querySelector('#itemTwo').style.display = "none";
-//         document.querySelector('#itemThree').style.display = "block";
+    if(itemNum == 1){
+        document.getElementById('itemPage').innerText = "1";
 
-//         document.querySelector('#itemOneD').style.display = "none";
-//         document.querySelector('#itemTwoD').style.display = "none";
-//         document.querySelector('#itemThreeD').style.display = "block";
-//     }
-// }
+        document.querySelector('#itemOne').style.display = "block";
+        document.querySelector('#itemTwo').style.display = "none";
+        document.querySelector('#itemThree').style.display = "none";
+
+        document.querySelector('#itemOneD').style.display = "block";
+        document.querySelector('#itemTwoD').style.display = "none";
+        document.querySelector('#itemThreeD').style.display = "none";
+    }
+    if(itemNum == 2){
+        document.getElementById('itemPage').innerText = "2";
+
+        document.querySelector('#itemOne').style.display = "none";
+        document.querySelector('#itemTwo').style.display = "block";
+        document.querySelector('#itemThree').style.display = "none";
+
+        document.querySelector('#itemOneD').style.display = "none";
+        document.querySelector('#itemTwoD').style.display = "block";
+        document.querySelector('#itemThreeD').style.display = "none";
+    }
+    if(itemNum == 3){
+        document.getElementById('itemPage').innerText = "3";
+
+        document.querySelector('#itemOne').style.display = "none";
+        document.querySelector('#itemTwo').style.display = "none";
+        document.querySelector('#itemThree').style.display = "block";
+
+        document.querySelector('#itemOneD').style.display = "none";
+        document.querySelector('#itemTwoD').style.display = "none";
+        document.querySelector('#itemThreeD').style.display = "block";
+    }
+}
